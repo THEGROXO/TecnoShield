@@ -1,0 +1,37 @@
+TECNOSHIELD AI — PROYECTO INTEGRADO
+==================================
+
+Se ha integrado TecnoShield AI en el proyecto web original, sin reconstruir su diseño.
+
+ESTRUCTURA
+- index.html: página principal original + carga del asistente.
+- servicios.html: catálogo original + carga del asistente.
+- assets/: imágenes y logotipo originales, sin cambios.
+- tecnoshield-ai.js: interfaz del chat flotante.
+- api/chat.js: endpoint Vercel para OpenAI Responses API.
+- api/leads.js: registro de prospectos en Supabase.
+- api/admin-leads.js: endpoint privado del panel.
+- admin.html: panel de solicitudes.
+- supabase-leads.sql: tabla de prospectos.
+- supabase-reviews.sql: archivo original de reseñas, conservado.
+
+INSTALACIÓN
+1. Extrae el ZIP.
+2. En Vercel, configura Root Directory = web (si el repositorio contiene la carpeta web en la raíz).
+3. Añade variables de entorno:
+   OPENAI_API_KEY = clave secreta de OpenAI
+   OPENAI_MODEL = gpt-5.5 (opcional)
+   SUPABASE_URL = URL del proyecto Supabase
+   SUPABASE_SERVICE_ROLE_KEY = clave service_role (solo servidor)
+   ADMIN_API_KEY = clave administrativa larga y aleatoria
+4. En Supabase SQL Editor ejecuta supabase-leads.sql.
+5. Publica el proyecto en Vercel.
+6. Prueba https://TU-DOMINIO/admin.html y el chat de ambas páginas.
+
+IMPORTANTE
+- No publiques claves en HTML/JS ni las envíes por chat.
+- No sobrescribas el proyecto original; crea una copia o rama antes de reemplazar archivos.
+- El chat aparece en ambas páginas. La IA y el registro de leads requieren configurar las variables y desplegar las funciones.
+- El panel inicial utiliza una clave administrativa compartida; es una primera versión, no un sistema de usuarios multiadministrador.
+- El número de WhatsApp utilizado coincide con el que aparece en el sitio original: +51 978 944 240.
+- Revisa el aviso de privacidad y consentimiento para el tratamiento de datos personales antes de producción.

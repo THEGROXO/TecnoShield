@@ -1,141 +1,211 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#ffffff">
-<meta name="description" content="TECNOSHIELD: servicio técnico de celulares, computadoras, microelectrónica, redes, cámaras de seguridad y soluciones tecnológicas en Mala, Cañete, Lima.">
-<title>TECNOSHIELD | Tecnología, seguridad y confianza</title>
+<meta name="theme-color" content="#050d1b">
+<meta name="description" content="Servicio técnico, videovigilancia, redes y suministro de equipos para hogares, empresas y condominios en Mala y Cañete. Cotiza con TECNOSHIELD por WhatsApp.">
+<title>Servicio técnico y soluciones para condominios en Mala | TECNOSHIELD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--blue:#075de8;--cyan:#00b9e8;--navy:#07111f;--ink:#111827;--muted:#667085;--line:#e7eaf0;--soft:#f5f7fa;--white:#fff;--radius:26px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;background:#fff;line-height:1.55}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1240px,92%);margin:auto}
-.topbar{height:34px;background:#f5f6f8;color:#626b78;font-size:11px;display:flex;align-items:center}.topbar .wrap{display:flex;justify-content:space-between}
-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #eceef2}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:26px}.brand img{width:180px;height:67px;object-fit:contain;object-position:left center}.navlinks{display:flex;align-items:center;gap:30px;font-size:14px;font-weight:700}.navlinks a{padding:30px 0;border-bottom:2px solid transparent}.navlinks a:hover{border-color:var(--blue);color:var(--blue)}.navright{display:flex;align-items:center;gap:17px}.navicon{border:0;background:none;font-size:20px;cursor:pointer}.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:99px;padding:12px 21px;font-weight:700;font-size:13px;background:var(--blue);color:#fff;transition:.2s;border:1px solid var(--blue)}.pill:hover{background:#004bc0;transform:translateY(-2px)}.pill.white{background:#fff;color:var(--ink);border-color:#fff}.pill.outline{background:transparent;color:var(--ink);border-color:#cbd2dc}.hamb{display:none;background:none;border:0;font-size:24px}
-.hero{position:relative;min-height:570px;overflow:hidden;background:#091523;color:#fff;display:flex;align-items:center}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,24,.96) 0%,rgba(4,12,24,.82) 42%,rgba(4,12,24,.18) 100%),url('https://images.unsplash.com/photo-1581092918056-0c4c3d0a9f3f?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat;opacity:.96}
-.hero:after{content:"";position:absolute;width:620px;height:620px;border:1px solid #41c5ff40;border-radius:50%;right:8%;top:50%;transform:translateY(-50%);box-shadow:0 0 0 55px #39baff0a,0 0 0 110px #39baff08}
-.hero .wrap{position:relative;z-index:2;padding:88px 0}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:#78dfff}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.055em;max-width:700px;margin:18px 0}.hero h1 span{color:#68d7ff}.hero p{font-size:17px;color:#d5deeb;max-width:570px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-meta{font-size:11px;color:#a9b7c9;margin-top:24px}
-.quick{background:#fff;border-bottom:1px solid var(--line)}.quickgrid{display:grid;grid-template-columns:repeat(4,1fr)}.quick a{padding:24px 15px;text-align:center;border-right:1px solid var(--line);font-size:13px;font-weight:700;transition:.2s}.quick a:last-child{border:0}.quick a:hover{color:var(--blue);background:#f8fbff}.quick b{display:block;font-size:23px;margin-bottom:5px;color:var(--blue)}
-section{padding:88px 0}.heading{text-align:center;max-width:760px;margin:0 auto 42px}.heading .eyebrow{color:var(--blue)}.heading h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.045em;line-height:1.1;margin:12px 0}.heading p{color:var(--muted);margin:0;font-size:15px}
-.servicegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{border-radius:var(--radius);overflow:hidden;background:var(--soft);min-height:370px;position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:27px;transition:.25s}.service:hover{transform:translateY(-5px);box-shadow:0 18px 40px #0d1b2a14}.service:nth-child(2),.service:nth-child(5){background:#eaf3ff}.service:nth-child(3),.service:nth-child(6){background:#edf7fa}.service .num{font-size:11px;letter-spacing:.15em;color:#697789;font-weight:800}.service .symbol{font-size:46px;color:var(--blue);margin:12px 0}.service h3{font-size:23px;line-height:1.1;margin:0 0 10px;letter-spacing:-.03em}.service p{font-size:13px;color:#596579;margin:0 0 20px;max-width:330px}.arrow{font-size:13px;color:var(--blue);font-weight:800}
-.feature{background:#f4f6f8}.featurebox{min-height:470px;border-radius:32px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;background:#071523;color:#fff}.featurecopy{padding:60px;display:flex;flex-direction:column;justify-content:center}.featurecopy h2{font-size:clamp(32px,4vw,49px);line-height:1.05;letter-spacing:-.04em;margin:15px 0}.featurecopy p{color:#c3cedd;max-width:470px}.featurevisual{min-height:400px;background:linear-gradient(135deg,#0c2846aa,#08111c22),url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1100&q=85') center/cover}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}.tile{min-height:360px;border-radius:28px;padding:38px;display:flex;flex-direction:column;justify-content:end;overflow:hidden;background:linear-gradient(135deg,#07111f,#15365b);color:#fff;position:relative}.tile:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#06101ee8,transparent 75%),var(--photo) center/cover;opacity:.72}.tile>*{position:relative}.tile h3{font-size:32px;line-height:1.08;margin:8px 0}.tile p{color:#d5deea;max-width:430px;font-size:14px}.tile.light{background:linear-gradient(135deg,#dceeff,#f3f8ff);color:#111}.tile.light:before{opacity:.18}.tile.light p{color:#4c5c70}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{border-top:2px solid var(--blue);padding:22px 5px}.step b{font-size:34px;color:var(--blue)}.step h3{font-size:17px;margin:6px 0}.step p{font-size:13px;color:var(--muted);margin:0}
-.support{background:#071321;color:#fff}.supportgrid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px}.support h2{font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.04em}.support p{color:#b9c6d7}.supportlinks{display:grid;grid-template-columns:1fr 1fr;gap:12px}.supportlinks a{border:1px solid #ffffff26;border-radius:15px;padding:19px;font-size:13px;font-weight:700}.supportlinks a:hover{background:#ffffff12;border-color:#55caff}.supportlinks span{display:block;color:#6edaff;font-size:22px;margin-bottom:8px}
-.faq{max-width:850px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:19px 0}.faq summary{font-weight:750;cursor:pointer}.faq details p{font-size:14px;color:var(--muted)}
-.contact{background:#f4f6f9}.contactgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:start}.contact h2{font-size:43px;line-height:1.06;letter-spacing:-.04em}.contact p{color:var(--muted)}.form{background:#fff;border-radius:24px;padding:30px;box-shadow:0 10px 35px #0c1c3010}.form label{display:block;font-size:12px;font-weight:800;margin:12px 0 6px}.form input,.form select,.form textarea{width:100%;padding:13px;border:1px solid #dce1e8;border-radius:10px;background:#fff;font-size:14px}.form textarea{min-height:100px;resize:vertical}.form button{width:100%;margin-top:18px}
-footer{background:#050b13;color:#c3ccda;padding:55px 0 25px}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}.footlogo{width:190px;background:#fff;border-radius:8px;padding:5px}.footgrid h4{color:#fff;margin:0 0 13px}.footgrid a{display:block;font-size:12px;color:#b1bdcc;margin:8px 0}.footgrid p{font-size:12px;color:#9eabba}.copyright{border-top:1px solid #ffffff1a;margin-top:35px;padding-top:20px;font-size:11px;color:#8d9aaa;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-.whatsapp{position:fixed;right:22px;bottom:22px;z-index:40;background:#16a35b;color:#fff;padding:14px 20px;border-radius:99px;font-size:13px;font-weight:800;box-shadow:0 8px 25px #0003}
-@media(max-width:900px){.navlinks{gap:14px;font-size:12px}.brand img{width:145px}.featurecopy{padding:38px}.supportgrid{gap:30px}.footgrid{grid-template-columns:1fr 1fr}}
-@media(max-width:700px){.topbar{display:none}.nav{height:70px}.brand img{width:142px;height:60px}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:15px 5%;box-shadow:0 12px 18px #0001;flex-direction:column;align-items:stretch}.navlinks.show{display:flex}.navlinks a{padding:10px 0}.navright .pill{display:none}.hamb{display:block}.hero{min-height:570px}.hero .wrap{padding:75px 0}.hero:before{background:linear-gradient(90deg,#04101ee8,#04101e88),url('https://images.unsplash.com/photo-1581092918056-0c4c3d0a9f3f?auto=format&fit=crop&w=1200&q=80') center/cover}.quickgrid{grid-template-columns:1fr 1fr}.quick a:nth-child(2){border-right:0}.quick a:nth-child(-n+2){border-bottom:1px solid var(--line)}section{padding:65px 0}.servicegrid{grid-template-columns:1fr 1fr}.service{min-height:330px;padding:21px}.featurebox,.supportgrid,.contactgrid{grid-template-columns:1fr}.featurevisual{min-height:260px;order:-1}.featurecopy{padding:32px}.split{grid-template-columns:1fr}.tile{min-height:300px}.steps{grid-template-columns:1fr 1fr}.supportlinks{grid-template-columns:1fr 1fr}.contact h2{font-size:36px}}
-@media(max-width:460px){.servicegrid{grid-template-columns:1fr}.service{min-height:280px}.hero h1{font-size:43px}.hero p{font-size:15px}.steps{grid-template-columns:1fr 1fr}.footgrid{grid-template-columns:1fr 1fr}.footgrid>div:first-child{grid-column:1/-1}.supportlinks{grid-template-columns:1fr 1fr}.quick a{padding:18px 8px}}
-
-header{background:#071321;border-color:#17304c;color:#fff}
-.navlinks a{color:#e7eef8}.navlinks a:hover{color:#52caff;border-color:#00b9e8}
-.brand-lockup{display:flex;align-items:center;gap:10px;color:#fff;min-width:240px}
-.brand-lockup img{width:58px;height:58px;object-fit:contain}
-.brand-lockup strong{display:block;font-size:23px;letter-spacing:-1px;line-height:1;color:#fff;font-style:italic}
-.brand-lockup strong span{color:#149cff}
-.brand-lockup small{display:block;font-size:7px;letter-spacing:2px;color:#c3d1e3;margin-top:6px;white-space:nowrap}
-.hero-layout{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:20px}
-.hero-copy{position:relative;z-index:3}
-.hero-showcase{height:490px;position:relative;display:flex;align-items:center;justify-content:center}
-.hero-wheel{width:min(370px,75vw);height:min(370px,75vw);border-radius:50%;border:3px solid #08baff;box-shadow:0 0 22px #00aaffaa,0 0 70px #008cff55;position:relative;overflow:hidden;background:#071321}
-.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity .8s,transform 1.2s}
-.hero-slide.active{opacity:.9;transform:scale(1)}
-.wheel-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:112px;height:112px;border-radius:50%;background:#061323;border:2px solid #40caff;box-shadow:0 0 25px #00aaff99;display:grid;place-items:center;padding:14px}
-.wheel-center img{width:100%;height:100%;object-fit:contain}
-.orbit{position:absolute;border:1px solid #00baff88;border-radius:50%;width:440px;height:170px;transform:rotate(-25deg);box-shadow:0 0 18px #008cff33}
-.orbit-two{transform:rotate(28deg);width:470px;height:210px;border-color:#187bff77}
-.wheel-caption{position:absolute;bottom:22px;text-align:center;display:grid;color:#fff;text-shadow:0 2px 8px #000}
-.wheel-caption b{font-size:16px}.wheel-caption span{font-size:11px;color:#b9d7ee}
-.wheel-dots{position:absolute;bottom:-3px;display:flex;gap:9px}
-.wheel-dots button{width:8px;height:8px;border:0;border-radius:50%;background:#8ca4bd;padding:0;cursor:pointer}
-.wheel-dots button.active{background:#20c5ff;box-shadow:0 0 10px #20c5ff}
-.servicegrid{grid-template-columns:repeat(3,1fr)}
-.service-photo{min-height:365px;color:#fff;background:#08182a;isolation:isolate;overflow:hidden}
-.service-photo:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(3,12,25,.97) 0%,rgba(3,12,25,.72) 42%,rgba(3,12,25,.05) 100%),var(--service-image) center/cover;transition:transform .5s}
-.service-photo:hover:before{transform:scale(1.05)}
-.service-photo .num{color:#4bd5ff}.service-photo .symbol{display:none}
-.service-photo h3{color:#fff}.service-photo p{color:#dce7f4}.service-photo .arrow{color:#64d9ff}
-.mobile{--service-image:url('assets/servicio-1.jpg')}.computing{--service-image:url('assets/servicio-2.jpg')}.connectivity{--service-image:url('assets/servicio-3.jpg')}.cctv{--service-image:url('assets/servicio-4.jpg')}.cyber{--service-image:url('assets/servicio-5.jpg')}.business{--service-image:url('assets/servicio-6.webp')}
-footer{background:#06111f}.footlogo{width:68px;height:68px;object-fit:contain;background:transparent;padding:0;vertical-align:middle}.footer-brand{display:inline-block;color:#fff;font-size:21px;font-style:italic;vertical-align:middle;margin-left:8px}
-@media(max-width:900px){.hero-layout{grid-template-columns:1.05fr .95fr}.hero-showcase{height:390px}.hero-wheel{width:290px;height:290px}.orbit{width:350px}.brand-lockup{min-width:190px}}
-@media(max-width:700px){.hero-layout{grid-template-columns:1fr}.hero-showcase{height:390px;margin-top:10px}.hero-wheel{width:285px;height:285px}.orbit{width:340px;height:140px}.brand-lockup img{width:47px;height:47px}.brand-lockup strong{font-size:19px}.brand-lockup small{font-size:6px}.nav{background:#071321}.servicegrid{grid-template-columns:1fr 1fr}}
-@media(max-width:460px){.servicegrid{grid-template-columns:1fr}.hero-showcase{height:350px}.hero-wheel{width:255px;height:255px}.wheel-caption{bottom:13px}}
-
+:root{--bg:#050d1b;--bg2:#08182d;--panel:#0b1d34;--blue:#087bff;--cyan:#08c8ff;--ice:#dff7ff;--text:#f5f8ff;--muted:#b6c6dc;--ink:#101b2b;--light:#f1f5fc;--line:rgba(85,178,255,.35);--shadow:0 15px 45px rgba(0,0,0,.3)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(1440px,94%);margin:auto}
+header{position:sticky;top:0;z-index:99;height:76px;background:rgba(4,12,25,.93);backdrop-filter:blur(18px);border-bottom:1px solid rgba(37,155,255,.3);box-shadow:0 8px 30px rgba(0,0,0,.22)}
+header:after{content:"";position:absolute;bottom:-1px;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,#00aaff,transparent);box-shadow:0 0 12px #00aaff}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:9px;min-width:280px}.brand img{width:58px;height:62px;object-fit:contain;filter:drop-shadow(0 0 8px #168fff65)}.brand-name{font-size:clamp(18px,2vw,26px);font-weight:900;font-style:italic;letter-spacing:-1.2px;white-space:nowrap;text-shadow:0 0 14px #8dcfff40}.brand-name span{color:#13b8ff}.brand-tag{display:block;text-align:center;font-size:7px;letter-spacing:2px;font-style:normal;font-weight:700;color:#dcecff;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:clamp(12px,2vw,30px);font-size:13px;font-weight:650}.nav-links a{padding:28px 0 25px;border-bottom:3px solid transparent;transition:.2s}.nav-links a:hover,.nav-links a.active{border-color:var(--cyan);color:#fff;text-shadow:0 0 12px #00baff}
+.nav-right{display:flex;align-items:center;gap:11px}.search{width:42px;height:42px;border:1px solid #76bce9;border-radius:12px;background:transparent;color:#fff;font-size:22px;cursor:pointer}.whatsapp{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border-radius:30px;background:linear-gradient(120deg,#00a43b,#00d84b);box-shadow:0 0 18px #00c94b55;color:white;font-weight:800;font-size:12px;white-space:nowrap;transition:.2s}.whatsapp:hover{transform:translateY(-2px);box-shadow:0 0 28px #00e65c88}.whatsapp small{display:block;font-size:11px}.menu-toggle{display:none;border:1px solid #5a91bb;border-radius:10px;background:#07172b;color:#fff;font-size:23px;width:42px;height:42px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 70% 45%,#073d70 0,#071c37 30%,#050d1b 72%);border-bottom:1px solid #0a3960}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(0,135,255,.08),transparent 70%);pointer-events:none}.hero:after{content:"";position:absolute;bottom:0;left:-5%;width:110%;height:2px;background:linear-gradient(90deg,transparent,#008cff,#00d5ff,#008cff,transparent);box-shadow:0 0 20px #00aaff}
+.hero-grid{min-height:440px;display:grid;grid-template-columns:1.12fr .95fr .58fr;align-items:center;gap:22px;padding:28px 0 34px;position:relative;z-index:1}.eyebrow{font-size:11px;letter-spacing:3px;font-weight:800;color:#c7eaff}.hero h1{font-size:clamp(34px,3.6vw,52px);line-height:1.03;letter-spacing:-2px;margin:16px 0 14px}.hero h1 span{background:linear-gradient(90deg,#00a8ff,#24dcff);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 28px #008bff40}.hero-copy p{max-width:590px;font-size:16px;line-height:1.5;color:#d9e7f6;margin:0}.hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:13px;background:linear-gradient(110deg,#0078f5,#075fd8);border:1px solid #0bc3ff;color:#fff;font-size:13px;font-weight:800;box-shadow:0 0 18px #007cff55;transition:.22s}.btn:hover{transform:translateY(-3px);box-shadow:0 0 30px #00aaff9c}.btn.outline{background:rgba(4,17,34,.35);border:1px solid #23c9ff;box-shadow:none}.trust-points{display:flex;gap:0;margin-top:29px}.trust{display:flex;align-items:center;gap:10px;padding:0 17px;border-right:1px solid #47718f}.trust:first-child{padding-left:0}.trust:last-child{border:0}.trust .symbol{font-size:26px;color:#c9f3ff;text-shadow:0 0 12px #00baff}.trust span:last-child{font-size:12px;line-height:1.3;color:#e5effb}
+.hero-visual{height:370px;display:grid;place-items:center;position:relative}.orbit{position:absolute;width:360px;height:290px;border:1px solid rgba(0,177,255,.55);border-radius:50%;transform:rotate(-22deg) scaleX(1.3);box-shadow:0 0 18px #008fff66,inset 0 0 18px #008fff33;animation:orbit 10s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;inset:16px -10px;border:2px solid transparent;border-top-color:#05bfff;border-bottom-color:#057aff;border-radius:50%;filter:drop-shadow(0 0 8px #00aaff);transform:rotate(35deg)}.orbit:after{transform:rotate(-48deg);opacity:.6}.visual-ring{width:min(330px,29vw);height:min(330px,29vw);min-width:245px;min-height:245px;border-radius:50%;padding:8px;background:conic-gradient(#00cfff,#0864ff,#eafaff,#087aff,#00cfff);box-shadow:0 0 0 5px #0a8dff40,0 0 32px #008fff,0 0 75px #007aff75;position:relative;animation:pulse 3s ease-in-out infinite alternate}.visual-ring img.cover{width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid #06152a;display:block;transition:opacity .3s}.visual-logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:94px;height:94px;border-radius:50%;background:radial-gradient(circle,#12365a,#061326 72%);border:2px solid #23caff;display:grid;place-items:center;box-shadow:0 0 25px #009dff}.visual-logo img{width:76px;height:76px;object-fit:contain}.slide-control{position:absolute;left:0;right:0;display:flex;justify-content:space-between;z-index:3}.slide-control button{width:35px;height:35px;border-radius:50%;border:1px solid #9deaff;background:#06182f;color:white;font-size:22px;cursor:pointer;box-shadow:0 0 12px #009dff55}.hero-side{display:grid;gap:22px}.side-feature{display:grid;grid-template-columns:58px 1fr;align-items:center;gap:12px}.side-icon{width:56px;height:56px;border:1px solid #8bd8ff;border-radius:50%;display:grid;place-items:center;font-size:24px;color:#e8f8ff;box-shadow:inset 0 0 15px #009fff1c}.side-feature strong{font-size:14px}.side-feature p{font-size:11px;color:#d5e4f4;line-height:1.4;margin:3px 0 0}.slide-dots{display:flex;justify-content:center;gap:10px;margin-top:2px}.slide-dots button{width:9px;height:9px;border:0;border-radius:50%;background:#718ba8;cursor:pointer}.slide-dots button.active{background:#fff;box-shadow:0 0 12px #00baff}
+.services{background:linear-gradient(120deg,#f7f9ff,#eaf1fc);color:var(--ink);padding:24px 0 25px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 10px 19px}.section-title{border-left:6px solid #087bff;padding-left:16px}.section-title h2{font-size:31px;letter-spacing:-1px;margin:0}.section-title p{font-size:15px;color:#29384d;margin:2px 0 0}.all-services{padding:10px 18px;border:1px solid #a7b8d2;border-radius:13px;background:#fff;font-size:12px;font-weight:800;color:#15243a}
+.cards{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}.service-card{min-width:0;border-radius:15px;overflow:visible;background:linear-gradient(160deg,#0b2542,#061326);color:#fff;box-shadow:0 8px 22px #0b23401e;display:flex;flex-direction:column;position:relative;transition:transform .25s,box-shadow .25s}.service-card:before{content:"";position:absolute;top:0;left:15%;width:70%;height:2px;background:linear-gradient(90deg,transparent,#00caff,transparent);box-shadow:0 0 12px #00baff;z-index:2}.service-image{height:clamp(112px,12vw,175px);overflow:hidden;position:relative;border-radius:15px 15px 0 0}.service-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.service-card:hover .service-image img,.service-card:focus-within .service-image img{transform:scale(1.07)}.service-image:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#06172be8)}.service-body{padding:0 12px 13px;display:flex;flex-direction:column;flex:1}.service-heading{display:flex;align-items:center;gap:9px;min-height:60px;margin-top:-2px}.service-icon{font-size:24px;color:#fff}.service-heading small{display:block;color:#10caff;font-size:11px;font-weight:900}.service-heading h3{font-size:13px;line-height:1.1;text-transform:uppercase;margin:2px 0}.service-body p{font-size:10.5px;line-height:1.42;color:#dbe7f5;margin:5px 0 12px}.service-link{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:800}.service-link b{width:25px;height:25px;border-radius:50%;background:linear-gradient(135deg,#078bff,#064cb9);display:grid;place-items:center;font-size:17px;box-shadow:0 0 12px #007dff55}
+.benefits{background:#eaf1fc;padding:0 0 26px;color:#111d2e}.benefit-bar{border-radius:17px;background:linear-gradient(110deg,#f8fbff,#dce8f8);display:grid;grid-template-columns:repeat(4,1fr);padding:16px 15px;box-shadow:0 10px 25px #17365b12}.benefit{display:flex;justify-content:center;align-items:center;gap:13px;border-right:1px solid #b7c8dc}.benefit:last-child{border:0}.benefit-icon{font-size:29px;color:#071b33}.benefit strong{display:block;font-size:13px}.benefit small{font-size:11px;color:#34455d}
+.business{background:radial-gradient(ellipse at 50% 0,#0b2b4d,#061326 70%);padding:55px 0;text-align:center;border-top:1px solid #0b3456;border-bottom:1px solid #0b3456}.business h2{font-size:30px;margin:0 0 10px}.business p{color:#cad9e9;margin:0 auto 22px;max-width:760px;line-height:1.6}.business-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}.business-card{padding:21px 18px;text-align:left;border:1px solid #2875a4;border-radius:15px;background:linear-gradient(145deg,#0d2947cc,#061326dd);box-shadow:inset 0 1px #ffffff0b}.business-card span{font-size:25px;color:#35d4ff}.business-card h3{font-size:16px;margin:9px 0 7px;color:#fff}.business-card p{font-size:13px;margin:0;color:#cfdeed}.business-note{font-size:12px!important;color:#a9bfd6!important;margin:0 auto 22px!important}
+.contact{background:#f3f6fc;color:#132137;padding:48px 0}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}.contact h2{font-size:30px;margin:0 0 10px}.contact-copy p{color:#53647b;line-height:1.6}.contact-details{display:grid;gap:12px;margin-top:22px}.contact-detail{display:flex;gap:12px;align-items:center;font-size:14px}.contact-detail b{font-size:22px;color:#087bff}.contact-form{background:white;padding:25px;border-radius:18px;box-shadow:0 15px 45px #0a2b5014;border:1px solid #dce5f1}.contact-form h3{margin:0 0 18px;font-size:21px}.field{display:grid;gap:7px;margin-bottom:14px}.field label{font-size:12px;font-weight:800}.field input,.field select,.field textarea{width:100%;border:1px solid #d4dfec;border-radius:10px;padding:13px 14px;font:inherit;font-size:14px;background:#fbfdff;color:#17243a;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#078bff;box-shadow:0 0 0 3px #078bff1b}.field textarea{min-height:105px;resize:vertical}.submit{width:100%;border:0;cursor:pointer;padding:14px;border-radius:11px;background:linear-gradient(100deg,#087bff,#0757cf);color:white;font-weight:800;box-shadow:0 7px 20px #087bff35}.form-note{font-size:11px;color:#718198;margin:12px 0 0}
+footer{background:#040d1b;color:white;padding:25px 0 15px;border-top:1px solid #17466b}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:20px;align-items:center}.footer-brand{display:flex;align-items:center;gap:9px}.footer-brand img{width:58px;height:62px;object-fit:contain}.footer-brand strong{font-size:24px;font-style:italic;letter-spacing:-1px}.footer-brand strong span{color:#12b9ff}.footer-brand small{display:block;font-size:7px;letter-spacing:1.8px;color:#d5e6f6}.footer-item{display:flex;align-items:center;gap:11px;padding-left:17px;border-left:1px solid #54718d;font-size:12px;color:#e7f1fc}.footer-item b{font-size:21px;color:#fff}.copyright{text-align:center;border-top:1px solid #ffffff1b;margin-top:18px;padding-top:12px;color:#91a7bf;font-size:10px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+.service-card:hover,.service-card:focus-within{z-index:10;transform:translateY(-5px);box-shadow:0 14px 32px #007bff30,0 0 0 1px #12bfff}.service-popover{position:absolute;left:50%;bottom:calc(100% - 1px);z-index:11;width:min(290px,calc(100vw - 32px));padding:16px 17px;border:1px solid #16bfff;border-radius:14px;background:linear-gradient(145deg,#0c2948,#041020);color:#f5f8ff;text-align:left;box-shadow:0 14px 38px #0010209c,0 0 18px #008cff50;opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,8px);transition:opacity .18s ease,transform .18s ease,visibility .18s}.service-popover strong{display:block;margin-bottom:7px;color:#42d5ff;font-size:13px;letter-spacing:.2px}.service-popover p{margin:0;color:#e1ebf7;font-size:12px;line-height:1.5}.service-card:hover .service-popover,.service-card:focus-within .service-popover{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0)}.service-card:first-child .service-popover{left:0;transform:translate(0,8px)}.service-card:first-child:hover .service-popover,.service-card:first-child:focus-within .service-popover{transform:translate(0,0)}.service-card:nth-child(6n) .service-popover{left:auto;right:0;transform:translate(0,8px)}.service-card:nth-child(6n):hover .service-popover,.service-card:nth-child(6n):focus-within .service-popover{transform:translate(0,0)}
+@keyframes pulse{from{filter:brightness(.95);box-shadow:0 0 0 4px #0a82ff40,0 0 25px #008fff,0 0 52px #007aff55}to{filter:brightness(1.12);box-shadow:0 0 0 7px #0a82ff60,0 0 42px #008fff,0 0 82px #007aff88}}
+@keyframes orbit{to{transform:rotate(338deg) scaleX(1.3)}}
+@media(min-width:901px) and (max-width:1180px){
+ .container{width:96%}.nav{gap:10px}.brand{min-width:205px}.brand img{width:48px;height:55px}
+ .brand-name{font-size:19px}.brand-tag{font-size:6px;letter-spacing:1.2px}
+ .nav-links{gap:10px;font-size:10px}.nav-right{gap:7px}.whatsapp{padding:8px 10px;font-size:10px}
+ .hero-grid{grid-template-columns:1.08fr .9fr .5fr;gap:12px;min-height:390px}
+ .hero h1{font-size:clamp(31px,3.2vw,42px)}.hero-copy p{font-size:13px}
+ .hero-visual{height:320px}.visual-ring{width:clamp(230px,27vw,300px);height:clamp(230px,27vw,300px)}
+ .orbit{width:300px;height:250px}.side-feature{grid-template-columns:44px 1fr;gap:8px}.side-icon{width:43px;height:43px;font-size:19px}.side-feature strong{font-size:11px}.side-feature p{font-size:9px}
+ .section-title h2{font-size:26px}.service-image{height:115px}.service-body{padding:0 8px 10px}
+ .service-heading{gap:5px;min-height:48px}.service-icon{font-size:18px}.service-heading h3{font-size:10px}
+ .service-body p{font-size:9px}.service-link{font-size:8px}
+}
+@media(max-width:900px){.nav-links{gap:13px;font-size:11px}.brand{min-width:240px}.hero-grid{grid-template-columns:1.1fr .9fr}.hero-side{display:none}.cards{grid-template-columns:repeat(3,1fr)}.service-image{height:185px}.footer-grid{grid-template-columns:1fr 1fr}.footer-item{border:0;padding:0}}
+@media(max-width:700px){
+ html{scroll-padding-top:68px}header{height:66px}.brand{min-width:0;gap:5px}.brand img{width:43px;height:52px}.brand-name{font-size:19px}.brand-tag{font-size:5.5px;letter-spacing:1.3px}.menu-toggle{display:block}.search{display:none}.whatsapp{padding:8px 11px;font-size:0;gap:0}.whatsapp small{font-size:10px}.whatsapp .wa-icon{font-size:18px}
+ .nav-links{display:none;position:absolute;top:66px;left:0;right:0;padding:8px 5% 15px;background:rgba(4,12,25,.98);backdrop-filter:blur(15px);flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid #167db5}.nav-links.open{display:flex}.nav-links a{padding:13px 5px;border-bottom:1px solid #ffffff17}
+ .hero-grid{grid-template-columns:1fr;min-height:auto;padding:34px 0 27px;gap:3px}.hero-copy{text-align:left}.eyebrow{font-size:9px;letter-spacing:2px}.hero h1{font-size:clamp(33px,9vw,43px);letter-spacing:-1.4px;margin:13px 0}.hero-copy p{font-size:14px;line-height:1.48}.hero-actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:18px}.btn{width:100%;padding:14px 12px;font-size:13px}.trust-points{margin-top:21px;justify-content:space-between}.trust{padding:0 9px;gap:6px}.trust:first-child{padding-left:0}.trust .symbol{font-size:21px}.trust span:last-child{font-size:10px}.hero-visual{height:270px;margin-top:10px}.visual-ring{width:235px;height:235px;min-width:235px;min-height:235px}.orbit{width:255px;height:220px}.visual-logo{width:72px;height:72px}.visual-logo img{width:59px;height:59px}.slide-control{width:290px;left:50%;transform:translateX(-50%)}
+ .services{padding:25px 0 23px}.section-head{align-items:flex-start;margin:0 2px 15px}.section-title{padding-left:12px}.section-title h2{font-size:25px}.section-title p{font-size:12px;line-height:1.4}.all-services{font-size:10px;padding:9px 10px;white-space:nowrap}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.service-card{border-radius:13px}.service-image{height:125px}.service-body{padding:0 9px 10px}.service-heading{min-height:54px;gap:7px}.service-icon{font-size:20px}.service-heading small{font-size:10px}.service-heading h3{font-size:11px}.service-body p{font-size:9.5px;line-height:1.35;margin:4px 0 9px}.service-link{font-size:9px}.service-link b{width:23px;height:23px}
+ .benefits{padding-bottom:20px}.benefit-bar{grid-template-columns:1fr 1fr;gap:14px;padding:15px 12px}.benefit{justify-content:flex-start;border:0;gap:9px}.benefit-icon{font-size:23px}.benefit strong{font-size:10px}.benefit small{font-size:9px}
+ .business{padding:38px 0}.business h2{font-size:24px}.business p{font-size:13px}.business-grid{grid-template-columns:1fr;gap:10px;margin:20px 0}.business-card{padding:16px;text-align:left}.business-card h3{font-size:15px}.business-card p{font-size:12px}.contact{padding:35px 0}.contact-grid{grid-template-columns:1fr;gap:22px}.contact h2{font-size:25px}.contact-copy p{font-size:13px}.contact-form{padding:18px}.contact-form h3{font-size:19px}
+ .footer-grid{grid-template-columns:1fr 1fr;gap:16px}.footer-brand{grid-column:1/-1}.footer-brand img{width:48px;height:54px}.footer-brand strong{font-size:22px}.footer-item{font-size:10px}.footer-item b{font-size:18px}.copyright{text-align:left;line-height:1.5}
+}
+@media(max-width:380px){.brand-name{font-size:16px}.brand img{width:38px}.whatsapp{display:none}.section-title h2{font-size:22px}.all-services{font-size:9px}.service-image{height:108px}.service-heading h3{font-size:10px}.trust span:last-child{font-size:9px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span>TECNOLOGÍA · SEGURIDAD · CONFIANZA</span><span>Mala · Cañete · Lima, Perú</span></div></div>
-<header><div class="wrap nav">
-<a class="brand brand-lockup" href="#inicio" aria-label="TECNOSHIELD inicio"><img src="assets/tecnoshield-emblem.png" alt="Emblema TS de TECNOSHIELD"><span><strong>TECNO<span>SHIELD</span></strong><small>TECNOLOGÍA · SEGURIDAD · CONFIANZA</small></span></a>
-<nav class="navlinks" id="navlinks"><a href="#servicios">Servicios</a><a href="#mobile">Celulares</a><a href="#computo">Computación</a><a href="#seguridad">Seguridad</a><a href="#soporte">Soporte</a></nav>
-<div class="navright"><a class="pill" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n." target="_blank" rel="noopener">Contactar ↗</a><button class="hamb" id="hamb" aria-label="Abrir menú">☰</button></div>
-</div></header>
+<header>
+ <div class="container nav">
+  <a class="brand" href="#inicio" aria-label="TECNOSHIELD inicio">
+   <img src="assets/logo-ts.png" alt="Escudo TS TECNOSHIELD">
+   <span class="brand-name">TECNO<span>SHIELD</span><small class="brand-tag">TECNOLOGÍA · SEGURIDAD · CONFIANZA</small></span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+   <a class="active" href="#inicio">Inicio</a><a href="#servicios">Servicios⌄</a><a href="#empresas">Condominios⌄</a><a href="#soporte">Soporte</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+  </nav>
+  <div class="nav-right">
+   <button class="search" aria-label="Ir a servicios" onclick="document.querySelector('#servicios').scrollIntoView({behavior:'smooth'})">⌕</button>
+   <a class="whatsapp" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n." target="_blank" rel="noopener"><span class="wa-icon">◉</span><span>WhatsApp<small>+51 978 944 240</small></span></a>
+   <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+ </div>
+</header>
+
 <main>
-<section class="hero" id="inicio"><div class="wrap hero-layout"><div class="hero-copy"><div class="eyebrow">TECNOSHIELD · SOLUCIONES TECNOLÓGICAS INTEGRALES</div><h1>La tecnología de tu mundo, <span>en buenas manos.</span></h1><p>Servicio técnico especializado, informática, conectividad y seguridad electrónica para personas, negocios y empresas en Mala y Cañete.</p><div class="hero-actions"><a class="pill" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n." target="_blank" rel="noopener">Solicitar información</a><a class="pill white" href="#servicios">Descubrir servicios</a></div><div class="hero-meta">Diagnóstico claro · Presupuesto previo · Atención personalizada</div></div><div class="hero-showcase" aria-label="Carrusel de soluciones TECNOSHIELD"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-wheel"><img class="hero-slide active" src="assets/servicio-1.jpg" alt="Dispositivos móviles"><img class="hero-slide" src="assets/servicio-2.jpg" alt="Computación"><img class="hero-slide" src="assets/servicio-3.jpg" alt="Conectividad"><img class="hero-slide" src="assets/servicio-4.jpg" alt="Videovigilancia"><img class="hero-slide" src="assets/servicio-5.jpg" alt="Protección digital"><img class="hero-slide" src="assets/servicio-6.webp" alt="Soporte empresarial"><div class="wheel-center"><img src="assets/tecnoshield-emblem.png" alt="TS"></div></div><div class="wheel-caption"><b id="wheelTitle">Dispositivos móviles</b><span id="wheelSub">Servicio técnico y reparación</span></div><div class="wheel-dots"><button class="active" aria-label="Imagen 1"></button><button aria-label="Imagen 2"></button><button aria-label="Imagen 3"></button><button aria-label="Imagen 4"></button><button aria-label="Imagen 5"></button><button aria-label="Imagen 6"></button></div></div></div></section>
-<div class="quick"><div class="wrap quickgrid"><a href="#mobile"><b>▣</b>Servicio técnico móvil</a><a href="#computo"><b>⌘</b>Computadoras y laptops</a><a href="#redes"><b>⌁</b>Redes y conectividad</a><a href="#seguridad"><b>◉</b>Cámaras y seguridad</a></div></div>
-<section id="servicios"><div class="wrap"><div class="heading"><div class="eyebrow">Explora TECNOSHIELD</div><h2>Soluciones pensadas para mantenerte conectado.</h2><p>Un solo equipo técnico para atender tus dispositivos, infraestructura y necesidades de seguridad.</p></div>
-<div class="servicegrid">
-<article class="service service-photo mobile" id="mobile"><div><div class="num">01 / DISPOSITIVOS MÓVILES</div><div class="symbol">▣</div><h3>Celulares y tablets</h3><p>Diagnóstico, reparación de hardware y software, pantallas, baterías, conectores, carga y evaluación electrónica.</p></div><a class="arrow" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20celulares%20y%20tablets." target="_blank">Conocer el servicio ↗</a></article>
-<article class="service service-photo computing" id="computo"><div><div class="num">02 / COMPUTACIÓN</div><div class="symbol">▤</div><h3>Computadoras y laptops</h3><p>Mantenimiento, instalación de Windows y programas, optimización, SSD, RAM y diagnóstico de fallas.</p></div><a class="arrow" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20computadoras." target="_blank">Conocer el servicio ↗</a></article>
-<article class="service service-photo connectivity" id="redes"><div><div class="num">03 / CONECTIVIDAD</div><div class="symbol">⌁</div><h3>Redes y telecomunicaciones</h3><p>Redes LAN y Wi-Fi, routers, repetidores, cobertura inalámbrica y conectividad para empresas.</p></div><a class="arrow" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20redes." target="_blank">Conocer el servicio ↗</a></article>
-<article class="service service-photo cctv" id="seguridad"><div><div class="num">04 / VIDEOVIGILANCIA</div><div class="symbol">◉</div><h3>Cámaras y CCTV</h3><p>Cámaras IP, DVR/NVR, monitoreo desde celular, almacenamiento, mantenimiento y salas de control.</p></div><a class="arrow" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20c%C3%A1maras%20de%20seguridad." target="_blank">Conocer el servicio ↗</a></article>
-<article class="service service-photo cyber"><div><div class="num">05 / PROTECCIÓN DIGITAL</div><div class="symbol">⬡</div><h3>Seguridad informática</h3><p>Antivirus, protección de equipos, revisión básica de vulnerabilidades y buenas prácticas digitales.</p></div><a class="arrow" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20seguridad%20inform%C3%A1tica." target="_blank">Conocer el servicio ↗</a></article>
-<article class="service service-photo business"><div><div class="num">06 / SOPORTE EMPRESARIAL</div><div class="symbol">⚙</div><h3>Soluciones para negocios</h3><p>Asistencia técnica, mantenimiento, proyectos tecnológicos y soporte para oficinas y condominios.</p></div><a class="arrow" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20soporte%20empresarial." target="_blank">Conocer el servicio ↗</a></article>
-</div></div></section>
-<section class="feature"><div class="wrap"><div class="featurebox"><div class="featurecopy"><div class="eyebrow">Precisión técnica</div><h2>Tu equipo merece un diagnóstico, no una suposición.</h2><p>Evaluamos el problema, explicamos las alternativas y presentamos el presupuesto antes de realizar cualquier reparación.</p><a class="pill" style="width:max-content;margin-top:16px" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n." target="_blank">Consultar diagnóstico ↗</a></div><div class="featurevisual" role="img" aria-label="Componentes electrónicos y placa de circuito"></div></div></div></section>
-<section><div class="wrap"><div class="heading"><div class="eyebrow">Para cada entorno</div><h2>Tecnología que acompaña tu trabajo y tu día a día.</h2><p>Desde el mantenimiento de un dispositivo hasta la infraestructura tecnológica de un negocio.</p></div><div class="split">
-<article class="tile" style="--photo:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85')"><div class="eyebrow">Empresas y condominios</div><h3>Infraestructura y videovigilancia.</h3><p>Soluciones de cámaras IP, redes, grabación y monitoreo adaptadas a cada instalación.</p><a class="pill white" style="width:max-content" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20para%20un%20proyecto%20empresarial." target="_blank">Consultar proyecto ↗</a></article>
-<article class="tile light" style="--photo:url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=85')"><div class="eyebrow">Personas y profesionales</div><h3>Equipos listos para seguir contigo.</h3><p>Mantenimiento y asistencia para celulares, tablets, laptops y computadoras.</p><a class="pill" style="width:max-content" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n." target="_blank">Solicitar atención ↗</a></article>
-</div></div></section>
-<section id="proceso"><div class="wrap"><div class="heading"><div class="eyebrow">Así trabajamos</div><h2>Claro desde el primer contacto.</h2><p>Un proceso sencillo para que sepas qué necesita tu equipo y qué trabajo estás autorizando.</p></div><div class="steps"><div class="step"><b>01</b><h3>Cuéntanos</h3><p>Describe tu falla, equipo o proyecto.</p></div><div class="step"><b>02</b><h3>Evaluamos</h3><p>Revisamos la información y coordinamos el diagnóstico.</p></div><div class="step"><b>03</b><h3>Cotizamos</h3><p>Te explicamos opciones y presupuesto.</p></div><div class="step"><b>04</b><h3>Verificamos</h3><p>Ejecutamos lo autorizado y comprobamos el trabajo.</p></div></div></div></section>
-<section class="support" id="soporte"><div class="wrap supportgrid"><div><div class="eyebrow">Centro de soporte TECNOSHIELD</div><h2>Estamos aquí para ayudarte a resolverlo.</h2><p>Cuéntanos qué sucede con tu equipo o qué necesitas implementar. Te orientaremos sobre el siguiente paso.</p><a class="pill" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n." target="_blank">Hablar por WhatsApp ↗</a></div><div class="supportlinks"><a href="#contacto"><span>⌕</span>Solicitar diagnóstico</a><a href="#contacto"><span>▤</span>Solicitar cotización</a><a href="#faq"><span>?</span>Preguntas frecuentes</a><a href="#servicios"><span>⌘</span>Ver todos los servicios</a></div></div></section>
-<section id="faq"><div class="wrap"><div class="heading"><div class="eyebrow">Preguntas frecuentes</div><h2>Información antes de empezar.</h2></div><div class="faq">
-<details><summary>¿Puedo consultar antes de llevar mi equipo?</summary><p>Sí. Escríbenos y describe la falla. La orientación inicial no reemplaza el diagnóstico técnico cuando es necesario revisar el equipo.</p></details>
-<details><summary>¿Me informan el presupuesto antes de reparar?</summary><p>Sí. Primero se evalúa el trabajo necesario y se comunican las alternativas y el presupuesto para tu aprobación.</p></details>
-<details><summary>¿Atienden proyectos para empresas y condominios?</summary><p>Sí. Podemos evaluar necesidades de redes, cámaras IP, videovigilancia, soporte informático e infraestructura tecnológica.</p></details>
-<details><summary>¿En qué zona atienden?</summary><p>La atención está orientada a Mala, Cañete, Lima y alrededores. Las visitas e instalaciones se coordinan según el proyecto.</p></details>
-</div></div></section>
-<section class="contact" id="contacto"><div class="wrap contactgrid"><div><div class="eyebrow">Contacto</div><h2>Hablemos de lo que necesitas.</h2><p>Envíanos los detalles y prepararemos tu consulta para WhatsApp.</p><p><b>TECNOSHIELD</b><br>Tecnología · Seguridad · Confianza<br>Mala, Cañete, Lima, Perú</p><p><b>WhatsApp:</b> +51 978 944 240</p></div>
-<form class="form" id="contactForm"><h3 style="margin:0">Solicita información</h3><label for="name">Nombre</label><input id="name" required placeholder="Tu nombre"><label for="service">¿Qué servicio necesitas?</label><select id="service"><option>Servicio técnico de celulares y tablets</option><option>Computadoras y laptops</option><option>Redes y telecomunicaciones</option><option>Cámaras y videovigilancia</option><option>Seguridad informática</option><option>Soporte para negocios</option><option>Otro / Necesito orientación</option></select><label for="detail">Cuéntanos un poco más</label><textarea id="detail" placeholder="Equipo, falla o detalles del proyecto..."></textarea><button class="pill" type="submit">Enviar consulta por WhatsApp ↗</button><small style="display:block;color:#7b8492;margin-top:12px">No compartas contraseñas ni información confidencial.</small></form>
+<section class="hero" id="inicio">
+ <div class="container hero-grid">
+  <div class="hero-copy">
+   <div class="eyebrow">SERVICIOS TECNOLÓGICOS INTEGRALES</div>
+   <h1>Tecnología y seguridad,<br><span>en buenas manos.</span></h1>
+   <p>Servicio técnico, conectividad y videovigilancia para hogares y empresas. También atendemos condominios con soluciones y suministro de equipos bajo cotización en Mala y Cañete.</p>
+   <div class="hero-actions">
+    <a class="btn" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n." target="_blank" rel="noopener">◉ Solicita información por WhatsApp ›</a>
+    <a class="btn outline" href="#empresas">Soluciones para condominios ›</a>
+   </div>
+   <div class="trust-points">
+    <div class="trust"><span class="symbol">♢</span><span>Atención<br>confiable</span></div>
+    <div class="trust"><span class="symbol">ϟ</span><span>Respuesta<br>rápida</span></div>
+    <div class="trust"><span class="symbol">♙</span><span>Transparencia<br>en el servicio</span></div>
+   </div>
+  </div>
+  <div class="hero-visual">
+   <div class="orbit"></div>
+   <div class="visual-ring"><img id="heroSlide" class="cover" src="assets/collage-tecnologico.webp" alt="Collage de dispositivos, computación, conectividad y seguridad electrónica"><div class="visual-logo"><img src="assets/logo-ts.png" alt="Logo TS"></div></div>
+   <div class="slide-control"><button id="prevSlide" aria-label="Imagen anterior">‹</button><button id="nextSlide" aria-label="Imagen siguiente">›</button></div>
+  </div>
+  <div class="hero-side">
+   <div class="side-feature"><div class="side-icon">▱</div><div><strong>Equipos e Informática</strong><p>Diagnóstico, mantenimiento y optimización.</p></div></div>
+   <div class="side-feature"><div class="side-icon">⌁</div><div><strong>Conectividad</strong><p>Redes, Wi-Fi y soluciones de comunicación.</p></div></div>
+   <div class="side-feature"><div class="side-icon">▣</div><div><strong>Seguridad Electrónica</strong><p>Videovigilancia y control de acceso.</p></div></div>
+   <div class="slide-dots" id="slideDots"><button class="active" aria-label="Diapositiva 1"></button><button aria-label="Diapositiva 2"></button><button aria-label="Diapositiva 3"></button><button aria-label="Diapositiva 4"></button><button aria-label="Diapositiva 5"></button><button aria-label="Diapositiva 6"></button><button aria-label="Diapositiva 7"></button></div>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="servicios">
+ <div class="container">
+  <div class="section-head"><div class="section-title"><h2>Nuestros Servicios</h2><p>Soluciones tecnológicas adaptadas a tus necesidades.</p></div><a class="all-services" href="servicios.html">Ver todos los servicios ›</a></div>
+  <div class="cards">
+   <article class="service-card reveal" tabindex="0" aria-describedby="service-detail-1"><div class="service-image"><img src="assets/servicio-1.webp" alt="Dispositivos móviles y teléfonos inteligentes" loading="lazy"></div><div class="service-body"><div class="service-heading"><span class="service-icon">▯</span><div><small>01 /</small><h3>Dispositivos móviles</h3></div></div><p>Diagnóstico, reparación y mantenimiento de celulares y tablets.</p><a class="service-link" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20dispositivos%20m%C3%B3viles." target="_blank" rel="noopener">Solicitar información <b>›</b></a></div><div class="service-popover" id="service-detail-1" role="tooltip"><strong>Celulares y tablets</strong><p>Evaluamos fallas y necesidades de mantenimiento para orientarte sobre las alternativas de reparación de tu equipo. Escríbenos con la marca, el modelo y el problema que presenta.</p></div></article>
+   <article class="service-card reveal" tabindex="0" aria-describedby="service-detail-2"><div class="service-image"><img src="assets/servicio-2.webp" alt="Computadoras y equipos de gaming" loading="lazy"></div><div class="service-body"><div class="service-heading"><span class="service-icon">▱</span><div><small>02 /</small><h3>Computación</h3></div></div><p>Mantenimiento, reparación y optimización de computadoras y laptops.</p><a class="service-link" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20computaci%C3%B3n." target="_blank" rel="noopener">Solicitar información <b>›</b></a></div><div class="service-popover" id="service-detail-2" role="tooltip"><strong>Computadoras y laptops</strong><p>Atendemos mantenimiento, diagnóstico, reparación y optimización de equipos. Cuéntanos el modelo y qué necesitas para orientarte y cotizar el servicio.</p></div></article>
+   <article class="service-card reveal" tabindex="0" aria-describedby="service-detail-3"><div class="service-image"><img src="assets/servicio-3.webp" alt="Conectividad, redes e infraestructura" loading="lazy"></div><div class="service-body"><div class="service-heading"><span class="service-icon">⌁</span><div><small>03 /</small><h3>Conectividad</h3></div></div><p>Redes, Wi-Fi, infraestructura y soluciones de comunicación.</p><a class="service-link" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20conectividad." target="_blank" rel="noopener">Solicitar información <b>›</b></a></div><div class="service-popover" id="service-detail-3" role="tooltip"><strong>Redes y conectividad</strong><p>Soluciones de redes cableadas y Wi-Fi para hogares y negocios, desde la revisión de tus necesidades hasta la implementación de infraestructura y equipos.</p></div></article>
+   <article class="service-card reveal" tabindex="0" aria-describedby="service-detail-4"><div class="service-image"><img src="assets/servicio-4.webp" alt="Videovigilancia y cámaras de seguridad" loading="lazy"></div><div class="service-body"><div class="service-heading"><span class="service-icon">▣</span><div><small>04 /</small><h3>Videovigilancia</h3></div></div><p>Instalación y mantenimiento de sistemas CCTV, control de acceso y monitoreo.</p><a class="service-link" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20videovigilancia." target="_blank" rel="noopener">Solicitar información <b>›</b></a></div><div class="service-popover" id="service-detail-4" role="tooltip"><strong>Videovigilancia y seguridad</strong><p>Diseñamos soluciones CCTV según los espacios y necesidades del proyecto, con instalación, mantenimiento y opciones de monitoreo. También cotizamos control de acceso para edificios y condominios.</p></div></article>
+   <article class="service-card reveal" tabindex="0" aria-describedby="service-detail-5"><div class="service-image"><img src="assets/servicio-5.webp" alt="Protección digital y ciberseguridad" loading="lazy"></div><div class="service-body"><div class="service-heading"><span class="service-icon">⬡</span><div><small>05 /</small><h3>Protección digital</h3></div></div><p>Ciberseguridad, respaldo de información y protección contra amenazas.</p><a class="service-link" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20protecci%C3%B3n%20digital." target="_blank" rel="noopener">Solicitar información <b>›</b></a></div><div class="service-popover" id="service-detail-5" role="tooltip"><strong>Protección digital</strong><p>Te orientamos sobre medidas de ciberseguridad, copias de respaldo y protección de equipos e información para reducir riesgos en el uso diario.</p></div></article>
+   <article class="service-card reveal" tabindex="0" aria-describedby="service-detail-6"><div class="service-image"><img src="assets/servicio-6.webp" alt="Soporte técnico empresarial" loading="lazy"></div><div class="service-body"><div class="service-heading"><span class="service-icon">♧</span><div><small>06 /</small><h3>Soporte empresarial</h3></div></div><p>Soporte técnico, administración de equipos y soluciones IT para tu negocio.</p><a class="service-link" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n%20sobre%20soporte%20empresarial." target="_blank" rel="noopener">Solicitar información <b>›</b></a></div><div class="service-popover" id="service-detail-6" role="tooltip"><strong>Soporte para empresas</strong><p>Apoyamos con soporte técnico, mantenimiento y administración de equipos e infraestructura IT. Cuéntanos cuántos equipos tienes y qué tipo de atención requiere tu negocio.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="benefits" id="nosotros"><div class="container benefit-bar">
+ <div class="benefit"><span class="benefit-icon">♧</span><div><strong>Atención especializada</strong><small>Servicio técnico profesional.</small></div></div>
+ <div class="benefit"><span class="benefit-icon">ϟ</span><div><strong>Soluciones a medida</strong><small>Para hogares y empresas.</small></div></div>
+ <div class="benefit"><span class="benefit-icon">♢</span><div><strong>Seguridad y confianza</strong><small>Transparencia en cada servicio.</small></div></div>
+ <div class="benefit"><span class="benefit-icon">▦</span><div><strong>Atención empresarial</strong><small>Soporte y proyectos IT.</small></div></div>
+</div></section>
+
+<section class="business" id="empresas"><div class="container">
+ <div class="eyebrow">ATENCIÓN A JUNTAS, ADMINISTRADORES Y PROPIETARIOS</div><h2>Soluciones para condominios y edificios</h2>
+ <p>Un solo contacto para cotizar instalación, mantenimiento y suministro de tecnología para áreas comunes. Cuéntanos el alcance del proyecto y coordinamos una propuesta según las necesidades del edificio.</p>
+ <div class="business-grid">
+  <article class="business-card"><span aria-hidden="true">▣</span><h3>Videovigilancia y control de acceso</h3><p>Cámaras, grabación, visualización y soluciones de acceso para ingresos y áreas comunes.</p></article>
+  <article class="business-card"><span aria-hidden="true">⌁</span><h3>Redes y conectividad</h3><p>Cableado, puntos de red, Wi-Fi e infraestructura para espacios compartidos y oficinas administrativas.</p></article>
+  <article class="business-card"><span aria-hidden="true">▤</span><h3>Materiales y equipos</h3><p>Cotización y suministro coordinado de cámaras, cableado, conectores, equipos de red y accesorios tecnológicos según el proyecto.</p></article>
+ </div>
+ <p class="business-note">El suministro se cotiza según cantidades, especificaciones y disponibilidad. Solicita una evaluación o envíanos tu lista de materiales.</p>
+ <a class="btn" href="#contacto">Cotizar para mi condominio ›</a>
+</div></section>
+
+<section class="contact" id="contacto"><div class="container contact-grid">
+ <div class="contact-copy" id="soporte"><div class="eyebrow" style="color:#087bff">HABLEMOS DE TU PROYECTO</div><h2>¿En qué podemos ayudarte?</h2><p>Cuéntanos qué equipo necesitas reparar, qué instalación deseas implementar o qué materiales necesita tu condominio. Preparamos tu consulta para enviarla por WhatsApp y cotizar según el alcance del proyecto.</p>
+  <div class="contact-details"><div class="contact-detail"><b>⌖</b><span>Mala, Cañete, Lima, Perú</span></div><div class="contact-detail"><b>◉</b><span>WhatsApp: +51 978 944 240</span></div><div class="contact-detail"><b>✓</b><span>Atención para hogares y empresas</span></div></div>
+ </div>
+ <form class="contact-form" id="contactForm">
+  <h3>Solicita información</h3>
+  <div class="field"><label for="name">Nombre</label><input id="name" name="name" type="text" placeholder="Tu nombre" autocomplete="name" required></div>
+  <div class="field"><label for="service">Servicio</label><select id="service" name="service" required><option value="Dispositivos móviles">Dispositivos móviles</option><option value="Computación">Computación</option><option value="Conectividad">Conectividad</option><option value="Videovigilancia">Videovigilancia</option><option value="Protección digital">Protección digital</option><option value="Soporte empresarial">Soporte empresarial</option><option value="Soluciones para condominios y edificios">Soluciones para condominios y edificios</option><option value="Suministro de materiales y equipos">Suministro de materiales y equipos</option><option value="Otro servicio o proyecto">Otro servicio o proyecto</option></select></div>
+  <div class="field"><label for="detail">Cuéntanos brevemente</label><textarea id="detail" name="detail" placeholder="Indica el equipo, falla, proyecto o lista de materiales que necesitas cotizar..."></textarea></div>
+  <button class="submit" type="submit">Preparar mensaje de WhatsApp ↗</button>
+  <p class="form-note">No compartas contraseñas ni información confidencial en este formulario.</p>
+ </form>
 </div></section>
 </main>
-<footer><div class="wrap"><div class="footgrid"><div><img class="footlogo" src="assets/tecnoshield-emblem.png" alt="Emblema TECNOSHIELD"><b class="footer-brand">TECNOSHIELD</b><p>Tecnología · Seguridad · Confianza.<br>Soluciones tecnológicas en Mala, Cañete, Lima.</p></div><div><h4>Servicios</h4><a href="#mobile">Celulares y tablets</a><a href="#computo">Computadoras</a><a href="#redes">Redes</a><a href="#seguridad">CCTV</a></div><div><h4>Soporte</h4><a href="#soporte">Centro de soporte</a><a href="#faq">Preguntas frecuentes</a><a href="#contacto">Cotizaciones</a></div><div><h4>Contacto</h4><a href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n." target="_blank">WhatsApp +51 978 944 240</a><a href="#contacto">Mala, Cañete, Perú</a></div></div><div class="copyright"><span>© <span id="year"></span> TECNOSHIELD. Todos los derechos reservados.</span><span>TECNOLOGÍA · SEGURIDAD · CONFIANZA</span></div></div></footer>
-<a class="whatsapp" href="https://wa.me/51978944240?text=Hola.%20Necesito%20informaci%C3%B3n." target="_blank" rel="noopener">WhatsApp ↗</a>
+
+<footer><div class="container"><div class="footer-grid">
+ <a class="footer-brand" href="#inicio"><img src="assets/logo-ts.png" alt="Escudo TS"><span><strong>TECNO<span>SHIELD</span></strong><small>TECNOLOGÍA · SEGURIDAD · CONFIANZA</small></span></a>
+ <div class="footer-item"><b>⌖</b><span>Mala, Cañete,<br>Lima, Perú</span></div>
+ <div class="footer-item"><b>◉</b><span>+51 978 944 240</span></div>
+ <div class="footer-item"><b>✉</b><span>Atención por WhatsApp</span></div>
+ </div><div class="copyright">© <span id="year"></span> TECNOSHIELD · Tecnología · Seguridad · Confianza</div></div></footer>
+
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
+const slides=['assets/collage-tecnologico.webp','assets/servicio-2.webp','assets/servicio-3.webp','assets/servicio-4.webp','assets/servicio-1.webp','assets/servicio-5.webp','assets/servicio-6.webp'];
+let slideIndex=0;
+const slideImage=document.getElementById('heroSlide');
+const dotButtons=[...document.querySelectorAll('#slideDots button')];
+function showSlide(index){
+ slideIndex=(index+slides.length)%slides.length;
+ slideImage.style.opacity='.15';
+ window.setTimeout(()=>{slideImage.src=slides[slideIndex];slideImage.style.opacity='1';},150);
+ dotButtons.forEach((dot,i)=>dot.classList.toggle('active',i===slideIndex));
+}
+document.getElementById('prevSlide').addEventListener('click',()=>showSlide(slideIndex-1));
+document.getElementById('nextSlide').addEventListener('click',()=>showSlide(slideIndex+1));
+dotButtons.forEach((dot,i)=>dot.addEventListener('click',()=>showSlide(i)));
+window.setInterval(()=>showSlide(slideIndex+1),4000);
 
-const slides=[...document.querySelectorAll('.hero-slide')];
-const dots=[...document.querySelectorAll('.wheel-dots button')];
-const wheelTitle=document.getElementById('wheelTitle');
-const wheelSub=document.getElementById('wheelSub');
-const wheelNames=[['Dispositivos móviles','Servicio técnico y reparación'],['Computación','Mantenimiento y optimización'],['Conectividad','Redes, Wi-Fi e infraestructura'],['Videovigilancia','Cámaras IP y monitoreo'],['Protección digital','Seguridad informática'],['Soporte empresarial','Tecnología para negocios']];
-let wheelIndex=0;
-function showWheelSlide(index){wheelIndex=(index+slides.length)%slides.length;slides.forEach((el,i)=>el.classList.toggle('active',i===wheelIndex));dots.forEach((el,i)=>el.classList.toggle('active',i===wheelIndex));wheelTitle.textContent=wheelNames[wheelIndex][0];wheelSub.textContent=wheelNames[wheelIndex][1];}
-dots.forEach((dot,i)=>dot.addEventListener('click',()=>showWheelSlide(i)));
-setInterval(()=>showWheelSlide(wheelIndex+1),3500);
+const menuToggle=document.getElementById('menuToggle');
+const navLinks=document.getElementById('navLinks');
+menuToggle.addEventListener('click',()=>{
+ const isOpen=navLinks.classList.toggle('open');
+ menuToggle.setAttribute('aria-expanded',String(isOpen));
+ menuToggle.textContent=isOpen?'×':'☰';
+});
+navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
+ navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰';
+}));
 
-document.getElementById('hamb').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('show'));
-document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('show')));
-const contactForm=document.getElementById('contactForm');
-contactForm.addEventListener('submit',function(e){
- e.preventDefault();
+document.getElementById('contactForm').addEventListener('submit',function(event){
+ event.preventDefault();
  const name=document.getElementById('name').value.trim();
  const service=document.getElementById('service').value;
  const detail=document.getElementById('detail').value.trim();
-
- if(!name){
-   document.getElementById('name').focus();
-   return;
- }
-
+ if(!name){document.getElementById('name').focus();return;}
  let message=`Hola, me llamo ${name}. Necesito información sobre ${service}.`;
- if(detail) message += ` ${detail}`;
-
- const whatsappUrl='https://api.whatsapp.com/send?phone=51978944240&text='+encodeURIComponent(message);
- // Navega en la misma pestaña para evitar que el bloqueador de ventanas emergentes impida abrir WhatsApp.
- window.location.href=whatsappUrl;
+ if(detail) message+=` ${detail}`;
+ const url='https://wa.me/51978944240?text='+encodeURIComponent(message);
+ window.location.href=url;
 });
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script>
-</body></html>
+<script src="tecnoshield-ai.js" defer></script>
+</body>
+</html>
