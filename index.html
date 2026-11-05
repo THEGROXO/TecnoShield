@@ -72,19 +72,24 @@ footer{background:#050b13;color:#c3ccda;padding:55px 0 25px}.footgrid{display:gr
 document.getElementById('year').textContent=new Date().getFullYear();
 document.getElementById('hamb').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('show'));
 document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('show')));
-document.getElementById('contactForm').addEventListener('submit',e=>{
+const contactForm=document.getElementById('contactForm');
+contactForm.addEventListener('submit',function(e){
  e.preventDefault();
  const name=document.getElementById('name').value.trim();
  const service=document.getElementById('service').value;
  const detail=document.getElementById('detail').value.trim();
- const messageParts=[
-   `Hola, me llamo ${name}.`,
-   `Necesito información sobre ${service}.`
- ];
- if(detail) messageParts.push(detail);
- const message=messageParts.join(' ');
- const whatsappUrl='https://wa.me/51978944240?text='+encodeURIComponent(message);
- window.open(whatsappUrl,'_blank','noopener,noreferrer');
+
+ if(!name){
+   document.getElementById('name').focus();
+   return;
+ }
+
+ let message=`Hola, me llamo ${name}. Necesito información sobre ${service}.`;
+ if(detail) message += ` ${detail}`;
+
+ const whatsappUrl='https://api.whatsapp.com/send?phone=51978944240&text='+encodeURIComponent(message);
+ // Navega en la misma pestaña para evitar que el bloqueador de ventanas emergentes impida abrir WhatsApp.
+ window.location.href=whatsappUrl;
 });
 </script>
 </body></html>
