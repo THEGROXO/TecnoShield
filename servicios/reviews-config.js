@@ -1,0 +1,1 @@
+window.TECNOSHIELD_SUPABASE_CONFIG = null;
